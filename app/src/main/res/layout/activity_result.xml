@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/b"
+    tools:context="com.example.harpal.catchtheball.result">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME OVER"
+        android:textStyle="italic"
+        android:textColor="@color/dark_cyan"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150"
+        android:textColor="@color/maroon"
+        android:textSize="50sp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Score : 300"
+        android:textColor="@color/brown"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvplayer"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:text="Player Name"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:gravity="center"
+        android:id="@+id/edtid"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:id="@+id/submitid"
+        android:textSize="20dp"
+        android:textColor="@color/maroon"
+        android:background="@drawable/buttonshape"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Try Again"
+        android:textSize="20dp"
+        android:textColor="@color/maroon"
+        android:background="@drawable/buttonshape"
+        android:textAllCaps="false"
+        android:onClick="tryAgain"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:id="@+id/exitid"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/maroon"
+        android:background="@drawable/buttonshape"
+        />
+
+</LinearLayout>
